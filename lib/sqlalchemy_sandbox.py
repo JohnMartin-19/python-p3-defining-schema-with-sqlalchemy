@@ -13,10 +13,13 @@ class Student(Base):
 
 #persisting schema
 #data models
+"""
 engine = create_engine('sqlite:///students.db')
 Base.metadata.create_all(engine)
+"""
 
 
 
 if __name__ == '__main__':
-    pass
+    engine = create_engine('sqlite:///students.db')
+    Base.metadata.create_all(engine)
